@@ -6,6 +6,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './components/Layout.jsx'
 import Home from './components/home/Home.jsx'
 import About from './components/about/About.jsx'
+import Contact from './components/contact/Contact.jsx'
+import Github from './components/github/Github.jsx'
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
       {
         path : "about",
         element : <About />
+      }, 
+      {
+        path : "contact",
+        element : <Contact />
+      }, 
+      {
+        path : "github",
+        element : <Github />
       }
     ]
   }
